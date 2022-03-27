@@ -1,16 +1,9 @@
-body{
-    margin-top: 80px;
-    padding: 0;
-    box-sizing: border-box;
-    align-content: center;
-    
-}
+
 .carousel{
     margin: 0 auto;
     width: 80%;
     height: 800px;
     position: relative;
-    
 }
 .carousel_img{
     object-fit: cover;
@@ -20,13 +13,16 @@ body{
 .carousel_track_container{
     background: chartreuse;
     height: 100%;
-    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 .carousel_track{
     padding: 0px;
     margin: 0px;
     list-style: none;
+    position: relative;
+    height: 100%;
+    transition: tranform 250ms ease-in;
     
 }
 .carousel_slide{
@@ -43,7 +39,6 @@ body{
     cursor: pointer;
     border: 0;
     background: transparent;
-    cursor: pointer;
    
 }
 .carousel_button--left{
