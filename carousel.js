@@ -39,7 +39,6 @@ const moveToslide = (track,currentSlide,targetSlide,slides) => {
  //hide the left or right arrow once we reached first or last slide
 
  const showremove = (targetIndex,preButton,nextButton,slides) => {
-     nextButton.classList.remove('hide');
      if(targetIndex === 0){
          preButton.classList.add('hide');
          nextButton.classList.remove('hide');

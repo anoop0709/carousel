@@ -1,7 +1,11 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(0,0,0,.2);
+}
 .carousel{
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     height: 800px;
     position: relative;
 }
@@ -12,6 +16,7 @@
 }
 .carousel_track_container{
     background: chartreuse;
+    width: 100%;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -42,11 +47,15 @@
    
 }
 .carousel_button--left{
-    left: -40px;
+    left: 20px;
+    z-index: 1000;
+    background: rgb(0,0,0,.3);
 
  }
  .carousel_button--right{
-     right:-40px;
+     right: 20px;
+     z-index: 1001;
+     background: rgb(0,0,0,0.5);
  }
  .carousel_nav{
      display: flex;
@@ -68,3 +77,16 @@
  .hide{
      display: none;
  }
+@media screen and (max-width:380px){
+    body{
+        margin: 0;
+        padding: 0;
+        background: rgb(0,0,0,.2);
+    }
+    .carousel{
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+}
